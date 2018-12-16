@@ -1,0 +1,35 @@
+﻿body{
+	background:#74acab;
+}
+p {
+	text-align:center;
+	border:1px solid #000000;
+	border-radius: 10px;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.name{
+	font-size:36px;
+	color:#000000;
+	text-decoration: none;
+	text-align:center;
+	padding-bottom:5px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.email{
+	font-size:36px;
+	width: 380px;
+}
+.about{
+	width: 250px;
+}
+.link{
+	text-align: center;
+	padding-top:5px;
+	padding-bottom:5px;
+	list-style-type: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
