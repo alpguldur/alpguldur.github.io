@@ -15,7 +15,7 @@ p {
 
 .name{
 	font-size:36px;
-	color:#000000;
+	color:#b7b7b7;
 	text-decoration: none;
 	text-align:center;
 	padding-bottom:5px;
@@ -25,10 +25,21 @@ p {
 .email{
 	font-size:36px;
 	width: 380px;
+    color: #1CA8DD;
 }
 
 .about{
 	width: 250px;
+    color: #b7b7b7;
+}
+
+a {
+    color: #C2C8CC;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .link{
