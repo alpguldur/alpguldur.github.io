@@ -1,6 +1,7 @@
 ﻿body{
-	background:#74acab;
+	background:#252830;
 }
+
 p {
 	text-align:center;
 	border:1px solid #000000;
@@ -11,6 +12,7 @@ p {
 	margin-right: auto;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .name{
 	font-size:36px;
 	color:#000000;
@@ -19,13 +21,16 @@ p {
 	padding-bottom:5px;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .email{
 	font-size:36px;
 	width: 380px;
 }
+
 .about{
 	width: 250px;
 }
+
 .link{
 	text-align: center;
 	padding-top:5px;
