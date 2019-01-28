@@ -115,16 +115,18 @@
               <tr>
                 <td valign="top">
                   <p style="margin-top: 25px;">
-                      <em>Cyber Grunt</em> is a top-down survival shooter game developed in Unreal Engine 4.
-                      Enemies are spawned in a wave based system. The number of enemies increases with each subsequent wave.
-                      The player controls a hero character equiped with a laser gun and has to survive as long as possible while utilizing tools around the level.
+                      <em>Cyber Grunt</em> is an endless top-down survival shooter developed in Unreal Engine 4 where the objective is to survive as long as possible. 
+                      Player controls a robot named XRH-44 equipped with a laser gun. 
+                      Game world contains several tools for the player to utilize and to hold off incoming enemies. 
+                      Enemies are spawned into the map through a wave system. 
+                      The number of enemies increases with each subsequent wave.
                   </p>
                   <p><img src="images/Banners/game_design_goals_banner.png" alt="Game Design Goals Banner" style="margin-top: -10px; margin-bottom: -20px;" /></p>
                   <ul>
-                      <li>Create a fun and challenging level in UE4 with a fast paced survival gameplay.</li>
-                      <li>Demonstrate skills in combat design and level design.</li>
-                      <li>Create an interesting world reusing custom static meshes from another artist.</li>
-                      <li>Build on fundamental twin-stick shooter controls by creating more abilities for the hero character to add variety to the gameplay.</li>
+                      <li>Create a challenging level in UE4 with a fast-paced survival gameplay.</li>
+                      <li>Design and balance game mechanics to make the combat encounter engaging.</li>
+                      <li>Build an interesting game world by limited amount of UE4 marketplace assets.</li>
+                      <li>Design an in-game economy to add variety to the gameplay.</li>
                   </ul>
                 </td>
                 <td valign="top" width="230" style="padding-left: 30px; padding-top: 25px;">
@@ -145,43 +147,75 @@
             <p><img src="images/Banners/gameplay_video_banner.png" alt="Gameplay Video Banner" style="margin-bottom:-20px;" /></p>
             <iframe width="800" height="450" src="https://www.youtube.com/embed/LiJDEN8xNOQ" frameborder="0" allowfullscreen=allowfullscreen></iframe>
 
-            <p><img src="images/Banners/game_and_level_design_banner.png" alt="Game and Level Design Banner" /></p>
-            <p><strong style="text-decoration: underline; color: #dadada">Player Movement:</strong></p>
+            <p><img src="images/Banners/game_design_banner.png" alt="Game and Level Design Banner" /></p>
+            <p><strong style="text-decoration: underline; color: #dadada">Player Input:</strong></p>
             <ul>
-                <li>Cyber Grunt is designed to be played with a controller.</li>
-                <li>Left thumb stick to move the character and right thumb stick to aim and shoot.</li>
-                <li>Running and rolling mechanics added to allow player to move away from mob of enemies.</li>
+                <li>Twin stick shooter controls on a gamepad (e.g., Xbox One controller) were used as a foundation to build on.</li>
+                <li>Left thumbstick to move the character.</li>
+                <li>Right thumbstick to aim and shoot at the same time.</li>
+                <li>Right bumper to roll quickly on the ground to escape from a mob of enemies</li>
+                <li>Face buttons to interact with turrets.</li>
+                <li>The gamepad was chosen for the player input because animations for turning 360 degrees around and shooting were much smoother and satisfying than mouse and keyboard.</li>
             </ul>
             <p><strong style="text-decoration: underline; color: #dadada">Enemies:</strong></p>
             <ul>
-                <li>Three kinds of enemies that each expode and cause damage to player when they get close to the player.</li>
-                <li>Health of each enemy depends on their sizes. Smaller enemy has less health, and bigger enemy has more health.</li>
-                <li>Smallest enemy is the fastest character in the game and deals least damage to player.</li>
-                <li>Medium sized enemy runs at the same speed as the hero character and deals mediocre damage.</li>
-                <li>Big enemy is very slow but deals major damage to the player.</li>
+                <li>There are three enemies that have unique characteristics.</li>
+                <li>All enemies explode and cause damage to the player once they get in close proximity.</li>
             </ul>
+            <p>1. Speedy</p>
+            <ul>
+                <li>The smallest and the fastest character.</li>
+                <li>Causes the smallest amount of damage.</li>
+                <li>Has the least health.</li>
+                <li>Designed to be more difficult to spot compared to other enemies and sneak up on the player.</li>
+            </ul>
+            <p>2. Grunt</p>
+            <ul>
+                <li>Character size and speed are similar to the player.</li>
+                <li>Causes mediocre damage and has medium health.</li>
+                <li>Designed to impose a moderate threat to the player.</li>
+            </ul>
+            <p>3. Heavy</p>
+            <ul>
+                <li>The biggest and the slowest character.</li>
+                <li>Causes the highest amount of damage.</li>
+                <li>Has the most health</li>
+                <li>Designed to be easily spotted and escapable from, but also to be most destructive in a tight area.</li>
+            </ul>
+              <p>Variety in enemy characteristics was designed to make the player think which enemy is their primary target in different circumstances to survive the longest.</p>
             <p><strong style="text-decoration: underline; color: #dadada">Enemy AI:</strong></p>
             <ul>
-                <li>Designed to chase the hero character wherever the player goes.</li>
-                <li>Enemies know the location of the player at all times, and they do not rely on sight to find the player.</li>
+                <li>All three enemies are scripted to chase the player at all times around the level.</li>
+                <li>Enemies do not rely on sight to spot the player, and they always know where the player is located.</li>
+                <li>Enemies' only target is the player. They do not attack the tools which player can use.</li>
+                <li>Constant pressure enemies put on the player is designed to have challenge aesthetic while maintaining fast-paced action.</li>
             </ul>
             <p><strong style="text-decoration: underline; color: #dadada">Enemy Waves:</strong></p>
             <ul>
-                <li>Unlimited number of waves with increasing number of enemies in subsequent waves.</li>
-                <li>Enemies are spawned around the map at random locations each wave.</li>
-                <li>The number of each type of enemy spawned at the start of every wave varies.</li>
+                <li>Unlimited number of waves with an increasing number of enemies in subsequent waves.</li>
+                <li>Enemies are spawned around the level at random locations each wave.</li>
+                <li>The number of each type of enemies spawned at the start of every wave varies.</li>
             </ul>
             <p><strong style="text-decoration: underline; color: #dadada">Point System:</strong></p>
+            <p>Player earns points for each enemy killed.</p>
             <ul>
-                <li>Player earns points for each enemy killed.</li>
-                <li>Each kind of enemy has different point value.</li>
-                <li>These points are used to use turrets scattered around the level.</li>
+                <li>Speedy: 20 points</li>
+                <li>Grunt: 30 points</li>
+                <li>Heavy: 40 points</li>
             </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Turrets:</strong></p>
+            <p>These points can be used to activate and upgrade turrets scattered around the level.</p>
+            <p><strong style="text-decoration: underline; color: #dadada">Tools:</strong></p>
+            <p>1. Turrets</p>
             <ul>
                 <li>Friendly turrets that can be activated and upgraded with points the player earns.</li>
                 <li>Turrets shoot the closest enemy in turret's field of view.</li>
-                <li>Designed to assist the player to survive especially in later rounds.</li>
+                <li>Designed to assist the player to survive longer especially in later rounds.</li>
+            </ul>
+            <p>2. Jump Pads</p>
+            <ul>
+                <li>When stepped on, they quickly move the player from one location to another.</li>
+                <li>Designed to assist the player to escape from a large number of enemy groups.</li>
+                <li>Located at several parts of the level.</li>
             </ul>
           </div>
         </div>
