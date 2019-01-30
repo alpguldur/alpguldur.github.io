@@ -15,7 +15,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <!--<li><a href="personal_projects.html">Personal Projects</a></li>-->
-          <li><a href="team_projects.html">Team Projects</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
@@ -99,13 +99,14 @@
               <tr>
                 <td valign="top">
                   <p style="margin-top: 25px;">
-                      <em>Metal Triumph</em> is a 2D side-scrolling action game built in Unreal Engine 4 with a 720 x 480 pixel art.
-                      Player controlls a rooster and tries to venture through secret headquarters to plant high-explosive eggs to destroy the hazardous stronghold.
+                      <em>Metal Triumph</em> is a 2D side-scrolling action game built in Unreal Engine 4 with a 720 x 480 pixel art style. 
+                      Dr. Triumph is an evil scientist who is developing dangerous nuclear arsenal in its secret fortress.
+                      You play as a rooster and set off to an adventure of venturing through a hidden headquarter to plant high-explosive eggs to destroy the hazardous stronghold.
                   </p>
                   <p><img src="images/Banners/level_design_goals_banner.png" alt="Level Design Goals Banner" style="margin-top: -10px; margin-bottom: -20px;" /></p>
                   <ul>
                       <li>Build a short level (3-5 minutes) where the player learns how to play the game through level design.</li>
-                      <li>Reuse limited amount of obstacles and enemies in a creative way to present new challenges that come to the player in a different way each time.</li>
+                      <li>Reuse limited amount of obstacles and enemies in a creative way to present new challenges to the player in a different way each time.</li>
                       <li>Design the layout of a boss battle arena to test the player's mastery of each skill earned through the gameplay up to that point.</li>
                       <li>Place assets with unique art style to communicate the narrative through environment objects and set the mood in the level.</li>
                   </ul>
@@ -123,46 +124,80 @@
               </tr>
             </table>
 
+            <p style="margin-top: 20px; margin-bottom: 10px;"><strong>Note: </strong><em>Screenshots and gameplay video show the work of the whole team.
+            My contributions to the project for game and level design are listed down below.</em></p>
+
             <!-- Gameplay Video -->
             <p><img src="images/Banners/gameplay_video_banner.png" alt="Gameplay Video Banner" style="margin-bottom:-20px;" /></p>
             <iframe width="800" height="450" src="https://www.youtube.com/embed/CgQkdEW3KDc" frameborder="0" allowfullscreen=allowfullscreen></iframe>
 
             <p><img src="images/Banners/game_design_banner.png" alt="Game Design Banner" style="margin-bottom: -10px;" /></p>
-            <p><strong style="text-decoration: underline; color: #dadada">Player Movement:</strong></p>
+            <p><strong style="text-decoration: underline; color: #dadada">Player Input:</strong></p>
             <ul>
-                <li>WASD movement for walking and flying.</li>
-                <li>Rooster's energy for flying is limited, so rooster can only go up at a certain height.</li>
+                <li>WASD for walking and flying.</li>
+                <li>Interactible objects (elevators, collectibles, bomb planting).</li>
+            </ul>
+            <p><strong style="text-decoration: underline; color: #dadada">Combat:</strong></p>
+            <ul>
+                <li>Rooster's shout (ranged attack)</li>
+                <li>Throwable egg bomb</li>
+                <li>Rooster's bite (melee attack)</li>
+            </ul>
+            <p><strong style="text-decoration: underline; color: #dadada">Game Balancing and Aesthetic:</strong></p>
+            <ul>
+                <li>All player input including ranged attack, flying, etc. consume energy.</li>
+                <li>Energy system was designed to make the Rooster constrained in the level to have a challenge game aesthetic in this unfamiliar game world.</li>
             </ul>
             <p><strong style="text-decoration: underline; color: #dadada">Enemies:</strong></p>
             <p>1. Minion</p>
             <ul>
                 <li>A regular soldier with a rifle.</li>
-                <li>Patrols in a certain area and searches for the rooster.</li>
-                <li>When he sees the rooster, he stops and shoots at the rooster.</li>
-                <li>If he loses sight of the rooster, he returns to patrolling.</li>
+                <li>Patrols a certain area and looks for the rooster.</li>
+                <li>Designed to impose a moderate threat to the player.</li>
             </ul>
             <p>2. Drone</p>
             <ul>
-                <li>Flies and patrols in a certain area.</li>
-                <li>When the rooster goes under, it shoots at the rooster but does not stop moving.</li>
+                <li>Flies and patrols a certain area.</li>
+                <li>When the rooster goes under it, Drone starts firing.</li>
+                <li>Designed to teach players that they can fly and shoot at the same time.</li>
             </ul>
             <p>3. Helicopter</p>
             <ul>
-                <li>Always chases the rooster and shoots homing missile at the rooster</li>
-                <li>Homing missile targets the rooster and deals a lot of damage.</li>
+                <li>Flies around the level and fires homing missiles.</li>
+                <li>Causes much more damage than the Minion and the Drone.</li>
+                <li>Designed to increase the difficulty of the level after the player mastered the base skills of the game.</li>
             </ul>
-            <p>4. Triumph: The Final Boss</p>
+            <p>4. Dr. Triumph: The Final Boss</p>
             <ul>
-                <li>Appears at the end of the level.</li>
-                <li>Switches between two attack depending on whether the rooster is near the boss or not.</li>
+                <li>The final boss of the level and the main antagonist of the game.</li>
+                <li>Has two combat abilities: Flying Fist (ranged attack) and Punch (melee attack).</li>
             </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Combat Design:</strong></p>
-            <p>Rooster has three kinds of attacks:</p>
+            <p><strong style="text-decoration: underline; color: #dadada">Enemy AI:</strong></p>
+            <p>1. Minion</p>
             <ul>
-                <li>Shout (ranged attack)</li>
-                <li>Egg bomb</li>
-                <li>Bite (melee attack)</li>
+                <li>When it spots the rooster, Minion stops and fires its rifle.</li>
+                <li>If it loses the sight of the rooster, Minion goes back to patrolling.</li>
             </ul>
+            <p>2. Drone</p>
+            <ul>
+                <li>The rate of fire increases when it locks on the rooster.</li>
+                <li>If the rooster is no longer under it, Drone goes back to patrolling.</li>
+            </ul>
+            <p>3. Helicopter</p>
+            <ul>
+                <li>When it spots the player, Helicopter starts chasing the rooster.</li>
+                <li>It will not stop chasing until the player is dead to increase the pacing of the level after it is introduced.</li>
+                <li>Can fly horizontally and vertically.</li>
+            </ul>
+            <p>4. Dr. Triumph</p>
+            <ul>
+                <li>Switches between its two attacks depending on the rooster's proximity to the Dr. Triumph.</li>
+                <li>Flying Fist locks on the rooster to test player's mastery of the flying skill.</li>
+            </ul>
+            <p><img src="images/Banners/level_design_analysis_banner.png" alt="Level Design Analysis Banner" style="margin-bottom: -10px;" /></p>
+            <p><strong style="text-decoration: underline; color: #dadada">Level Map:</strong></p>
+            <img src="images/metal_triumph/8_metal_triumph_map.jpg" style="width:100%">
+            <p><strong style="text-decoration: underline; color: #dadada">Level Map:</strong></p>
           </div>
         </div>
       </div>
