@@ -118,8 +118,8 @@
                       <em>Cyber Grunt</em> is an endless top-down survival shooter developed in Unreal Engine 4 where the objective is to survive as long as possible. 
                       Player controls a robot named XRH-44 equipped with a laser gun. 
                       Game world contains several tools for the player to utilize and to hold off incoming enemies. 
-                      Enemies are spawned into the map through a wave system. 
-                      The number of enemies increases with each subsequent wave.
+                      Enemies are spawned into the map through a wave system and the number of enemies increases with each subsequent wave.
+                      Player must avoid contact with enemies to stay alive.
                   </p>
                   <p><img src="images/Banners/game_design_goals_banner.png" alt="Game Design Goals Banner" style="margin-top: -10px; margin-bottom: -20px;" /></p>
                   <ul>
@@ -143,84 +143,59 @@
               </tr>
             </table>
 
-            <p style="margin-top: 20px; margin-bottom: 10px;"><strong>Note: </strong><em>Screenshots and gameplay video show the work of the whole team. 
-            My contributions to the project for game design are listed down below.</em></p>
+            <!--
+            <p style="margin-top:30px;">Download Game: <a href="https://drive.google.com/open?id=1rCkiPGdCVFUqQf5S_eT3pZTffTZqJ-lJ" target="_blank">CyberGruntBuild.zip</a></p>
+            <p><em style="text-decoration:underline;">Note:</em> This is a Windows build and a controller is required to play the game.</p>
+            <p><em style="text-decoration:underline; line-height: 30px;">Download Insructions:</em> After downloading the zip file, please unzip it, open <em>CyberGruntBuild</em> folder, and run <em>CyberGruntTheGame</em> file.
+            You can uninstall the game by deleting <em>CyberGruntBuild</em> folder.</p>
+            -->
 
             <!-- Gameplay Video -->
             <p><img src="images/Banners/gameplay_video_banner.png" alt="Gameplay Video Banner" style="margin-bottom:-20px;" /></p>
             <iframe width="800" height="450" src="https://www.youtube.com/embed/LiJDEN8xNOQ" frameborder="0" allowfullscreen=allowfullscreen></iframe>
 
-            <p><img src="images/Banners/game_design_banner.png" alt="Game and Level Design Banner" /></p>
-            <p><strong style="text-decoration: underline; color: #dadada">Player Input:</strong></p>
-            <ul>
-                <li>Twin stick shooter controls on a gamepad (e.g., Xbox One controller) were used as a foundation to build on.</li>
-                <li>Left thumbstick to move the character.</li>
-                <li>Right thumbstick to aim and shoot at the same time.</li>
-                <li>Right bumper to roll quickly on the ground to escape from a mob of enemies</li>
-                <li>Face buttons to interact with turrets.</li>
-                <li>The gamepad was chosen for the player input because animations for turning 360 degrees around and shooting were much smoother and satisfying than mouse and keyboard.</li>
+            <p style="margin-top: 30px;">Details about my work are listed down below:</p>
+
+            <p style="margin-top: 30px;"><strong style="text-decoration: underline; color: #dadada">Game Design:</strong></p>
+            <ul style="line-height: 25px;">
+                <li>Created a prototype using twin-stick shooter controls to present and pitch the game idea to the team.</li>
+                <li>Designed and placed tools (<em>Turrets</em> and <em>Jump Pads</em>) around the level to allow players to gain an advantage over the enemies for a limited time.</li>
+                <li>Balanced enemy attributes (health, movement speed, damage), so combat encounters present a fair challenge for the player.</li>
+                <li>Designed an in-game economy in which the player earns points for each enemy killed and use those points for upgrading <em>Turrets</em>.</li>            
             </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemies:</strong></p>
-            <ul>
-                <li>There are three enemies that have unique characteristics.</li>
-                <li>All enemies explode and cause damage to the player once they get in close proximity.</li>
+
+            <p><strong style="text-decoration: underline; color: #dadada">Combat:</strong></p>
+            <ul style="line-height: 25px;">
+                <li>Pitched and designed 3 enemy characters with unique attributes: <em>Speedy</em>, <em>Grunt</em>, and <em>Heavy</em>.</li>
+                <li>Designed <em>Speedy</em> character to be more difficult to spot compared to other enemies and sneak up on the player.</li>
+                <li>Designed <em>Grunt</em> character to impose a moderate threat to the player.</li>
+                <li>Designed <em>Heavy</em> character to be easily spotted and escapable from, but also to be most destructive in a tight area.</li>
+                <li>Placed cover objects around the level to have both wide-open and narrow spaces.</li>
+                <li>Scripted enemy AI to chase the player at all times around the level.</li>
+                <li>Designed enemy AI behavior to put constant pressure on the player and to have challenge aesthetic while maintaining fast-paced action.</li>
             </ul>
-            <p>1. Speedy</p>
-            <ul>
-                <li>The smallest and the fastest character.</li>
-                <li>Causes the smallest amount of damage.</li>
-                <li>Has the least health.</li>
-                <li>Designed to be more difficult to spot compared to other enemies and sneak up on the player.</li>
+
+            <p><strong style="text-decoration: underline; color: #dadada">Scripting:</strong></p>
+            <ul style="line-height: 25px;">
+                <li>Player Input (Twin-stick shooter controls for movement, rotation, aiming and firing)</li>
+                <li>Top-down camera</li>
+                <li>Enemy AI behavior</li>
+                <li>Custom HUD (health, points, number of waves, remaining enemies and match time)</li>
+                <li>Unlimited number of enemy waves</li>
+                <li>Scripted both the player and the enemy characters' attributes</li>
+                <li>The number of each type of enemies spawned at the start of every wave varies</li>
             </ul>
-            <p>2. Grunt</p>
-            <ul>
-                <li>Character size and speed are similar to the player.</li>
-                <li>Causes mediocre damage and has medium health.</li>
-                <li>Designed to impose a moderate threat to the player.</li>
+
+            <p><strong style="text-decoration: underline; color: #dadada">Level Design:</strong></p>
+            <ul style="line-height: 25px;">
+                <li>Placed <em>Turrets</em> and <em>Jump Pads</em> around the level to add variety to the gameplay.</li>
+                <li>Adjusted lighting to attain final quality.</li>
+                <li>Placed enemy spawn points across the level.</li>
+                <li>Designed level layout to feature a variety of combat encounters.</li>
             </ul>
-            <p>3. Heavy</p>
-            <ul>
-                <li>The biggest and the slowest character.</li>
-                <li>Causes the highest amount of damage.</li>
-                <li>Has the most health</li>
-                <li>Designed to be easily spotted and escapable from, but also to be most destructive in a tight area.</li>
-            </ul>
-              <p>Variety in enemy characteristics was designed to make the player think which enemy is their primary target in different circumstances to survive the longest.</p>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemy AI:</strong></p>
-            <ul>
-                <li>All three enemies are scripted to chase the player at all times around the level.</li>
-                <li>Enemies do not rely on sight to spot the player, and they always know where the player is located.</li>
-                <li>Enemies' only target is the player. They do not attack the tools which player can use.</li>
-                <li>Constant pressure enemies put on the player is designed to have challenge game aesthetic while maintaining fast-paced action.</li>
-            </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemy Waves:</strong></p>
-            <ul>
-                <li>Unlimited number of waves with an increasing number of enemies in subsequent waves.</li>
-                <li>Enemies are spawned around the level at random locations each wave.</li>
-                <li>The number of each type of enemies spawned at the start of every wave varies.</li>
-            </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Point System:</strong></p>
-            <p>Player earns points for each enemy killed.</p>
-            <ul>
-                <li>Speedy: 20 points</li>
-                <li>Grunt: 30 points</li>
-                <li>Heavy: 40 points</li>
-            </ul>
-            <p>These points can be used to activate and upgrade turrets scattered around the level.</p>
-            <p><strong style="text-decoration: underline; color: #dadada">Tools:</strong></p>
-            <p>1. Turrets</p>
-            <ul>
-                <li>Friendly turrets that can be activated and upgraded with points the player earns.</li>
-                <li>Has 3 attributes: damage, rate of fire, range</li>
-                <li>Turrets shoot the closest enemy in turret's field of view.</li>
-                <li>Designed to assist the player to survive longer especially in later rounds.</li>
-            </ul>
-            <p>2. Jump Pads</p>
-            <ul>
-                <li>When stepped on, they quickly move the player from one location to another.</li>
-                <li>Designed to assist the player to escape from a large number of enemy groups.</li>
-                <li>Located at several parts of the level.</li>
-            </ul>
+            <p><strong style="text-decoration: underline; color: #dadada">Level Map:</strong></p>
+            <a href="images/cyber_grunt/10_cyber_grunt_level_map.jpg"><img src="images/cyber_grunt/10_cyber_grunt_level_map.jpg" style="width:100%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="images/cyber_grunt/11_cyber_grunt_level_map.jpg"><img src="images/cyber_grunt/11_cyber_grunt_level_map.jpg" style="width:100%"></a>
           </div>
         </div>
       </div>
