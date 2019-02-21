@@ -133,16 +133,15 @@
             <p style="margin-top: 30px;"><strong style="text-decoration: underline; color: #dadada">Level Design:</strong></p>
             <ul>
                 <li>Level blockout by using simple geometry for designing the flow of the gameplay.</li>
-                <li>Level pacing to have high and low player interest throughout the map.</li>
                 <li>Placed assets for environmental storytelling and theming.</li>
                 <li>Collectible item placement for rewarding the player and encouraging exploration.</li>
-                <li>Designed environment layout for teaching mechanics and testing player's skill during boss battle.</li>
+                <li>Designed environment layout for teaching mechanics and testing player's skill during the boss battle.</li>
             </ul>
             <p><strong style="text-decoration: underline; color: #dadada">Combat:</strong></p>
             <ul>
                 <li>Placed AI paths, cover objects, and enemy spawn points on the map.</li>
                 <li>Used limited amount of enemy types to design different and interesting combat encounters.</li>
-                <li></li>
+                <li>Designed pacing of combat encounters to have highs and lows in player interest curve.</li>
             </ul>
             <p><strong style="text-decoration: underline; color: #dadada">Scripting:</strong></p>
             <ul>
@@ -150,53 +149,9 @@
                 <li>AI behavior for the <em>Minion</em> (rifle-man) and the <em>Helicopter</em>.</li>
                 <li>Implemented a health and an energy system as core mechanics.</li>
                 <li>Programmed <em>Helicopter's</em> homing missile.</li>
+				<li>Particle effects for egg bomb and player being hit.</li>
             </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemies:</strong></p>
-            <p>1. Minion</p>
-            <ul>
-                <li>A regular soldier with a rifle.</li>
-                <li>Patrols a certain area and looks for the rooster.</li>
-                <li>Designed to impose a moderate threat to the player.</li>
-            </ul>
-            <p>2. Drone</p>
-            <ul>
-                <li>Flies and patrols a certain area.</li>
-                <li>When the rooster goes under it, Drone starts firing.</li>
-                <li>Designed to teach players that they can fly and shoot at the same time.</li>
-            </ul>
-            <p>3. Helicopter</p>
-            <ul>
-                <li>Flies around the level and fires homing missiles.</li>
-                <li>Causes much more damage than the Minion and the Drone.</li>
-                <li>Designed to increase the difficulty of the level after the player mastered the base skills of the game.</li>
-            </ul>
-            <p>4. Dr. Triumph: The Final Boss</p>
-            <ul>
-                <li>The final boss of the level and the main antagonist of the game.</li>
-                <li>Has two combat abilities: Flying Fist (ranged attack) and Punch (melee attack).</li>
-            </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemy AI:</strong></p>
-            <p>1. Minion</p>
-            <ul>
-                <li>When it spots the rooster, Minion stops and fires its rifle.</li>
-                <li>If it loses the sight of the rooster, Minion goes back to patrolling.</li>
-            </ul>
-            <p>2. Drone</p>
-            <ul>
-                <li>The rate of fire increases when it locks on the rooster.</li>
-                <li>If the rooster is no longer under it, Drone goes back to patrolling.</li>
-            </ul>
-            <p>3. Helicopter</p>
-            <ul>
-                <li>When it spots the player, Helicopter starts chasing the rooster.</li>
-                <li>It will not stop chasing until the player is dead to increase the pacing of the level after it is introduced.</li>
-                <li>Can fly horizontally and vertically.</li>
-            </ul>
-            <p>4. Dr. Triumph</p>
-            <ul>
-                <li>Switches between its two attacks depending on the rooster's proximity to the Dr. Triumph.</li>
-                <li>Flying Fist locks on the rooster to test player's mastery of the flying skill.</li>
-            </ul>
+			
             <p><strong style="text-decoration: underline; color: #dadada">Level Map:</strong></p>
             <img src="images/metal_triumph/8_metal_triumph_map.jpg" style="width:100%">
           </div>

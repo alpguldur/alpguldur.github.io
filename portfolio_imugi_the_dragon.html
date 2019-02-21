@@ -104,10 +104,9 @@
                   </p>
                   <p><img src="images/Banners/level_design_goals_banner.png" alt="Level Design Goals Banner" style="margin-top: -10px; margin-bottom: -20px;" /></p>
                   <ul>
-                      <li>Create a fun and challenging level in UE4 with a fast paced survival gameplay.</li>
-                      <li>Demonstrate skills in combat design and level design.</li>
-                      <li>Create an interesting world reusing custom static meshes from another artist.</li>
-                      <li>Build on fundamental twin-stick shooter controls by creating more abilities for the hero character to add variety to the gameplay.</li>
+                      <li>Create two levels where the game aesthetic is exploration and main objective is to reach the bottom of the ocean.</li>
+                      <li>Build an interactive tutorial to teach players the mechanics of the game.</li>
+                      <li>Reuse limited amount of obstacles and enemies in a creative way to present new challenges to the player in a different way each time.</li>
                   </ul>
                 </td>
                 <td valign="top" width="230" style="padding-left: 30px; padding-top: 25px;">
@@ -128,46 +127,27 @@
             You can uninstall the game by deleting the <em>Dragon</em> folder.</p>
 
             <!-- Gameplay Video -->
-            <p><img src="images/Banners/gameplay_video_banner.png" alt="Gameplay Video Banner" style="margin-bottom:-20px;" /></p>
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/LiJDEN8xNOQ" frameborder="0" allowfullscreen=allowfullscreen></iframe>
+            <!--<p><img src="images/Banners/gameplay_video_banner.png" alt="Gameplay Video Banner" style="margin-bottom:-20px;" /></p>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/LiJDEN8xNOQ" frameborder="0" allowfullscreen=allowfullscreen></iframe>-->
 
-            <p><img src="images/Banners/game_and_level_design_banner.png" alt="Game and Level Design Banner" /></p>
-            <p><strong style="text-decoration: underline; color: #dadada">Player Movement:</strong></p>
+            <p style="margin-top: 30px; letter-spacing: 0.25px;">Responsibilities for the project:</p>
+            <p><strong style="text-decoration: underline; color: #dadada">Level Design:</strong></p>
             <ul>
-                <li>Cyber Grunt is designed to be played with a controller.</li>
-                <li>Left thumb stick to move the character and right thumb stick to aim and shoot.</li>
-                <li>Running and rolling mechanics added to allow player to move away from mob of enemies.</li>
+                <li>Designed environment layouts of both <em>Shallows</em> and <em>Abyss</em> levels.</li>
+                <li>Placed lore objects, health pickups and coins around the levels to strengthen exploration aesthetic feel.</li>
+                <li>Designed <em>Shallows</em> level to teach players the mechanics and ensure they are comfortable by the time they get to the <em>Abyss</em> level.
             </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemies:</strong></p>
+            <p><strong style="text-decoration: underline; color: #dadada">Combat:</strong></p>
             <ul>
-                <li>Three kinds of enemies that each expode and cause damage to player when they get close to the player.</li>
-                <li>Health of each enemy depends on their sizes. Smaller enemy has less health, and bigger enemy has more health.</li>
-                <li>Smallest enemy is the fastest character in the game and deals least damage to player.</li>
-                <li>Medium sized enemy runs at the same speed as the hero character and deals mediocre damage.</li>
-                <li>Big enemy is very slow but deals major damage to the player.</li>
+                <li>Placed limited amount of enemy types around the levels to design unique and interesting combat encounters.</li>
+                <li>Designed pacing of combat encounters to have highs and lows in player interest curve.</li>   
             </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemy AI:</strong></p>
+            <p><strong style="text-decoration: underline; color: #dadada">Scripting:</strong></p>
             <ul>
-                <li>Designed to chase the hero character wherever the player goes.</li>
-                <li>Enemies know the location of the player at all times, and they do not rely on sight to find the player.</li>
-            </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Enemy Waves:</strong></p>
-            <ul>
-                <li>Unlimited number of waves with increasing number of enemies in subsequent waves.</li>
-                <li>Enemies are spawned around the map at random locations each wave.</li>
-                <li>The number of each type of enemy spawned at the start of every wave varies.</li>
-            </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Point System:</strong></p>
-            <ul>
-                <li>Player earns points for each enemy killed.</li>
-                <li>Each kind of enemy has different point value.</li>
-                <li>These points are used to use turrets scattered around the level.</li>
-            </ul>
-            <p><strong style="text-decoration: underline; color: #dadada">Turrets:</strong></p>
-            <ul>
-                <li>Friendly turrets that can be activated and upgraded with points the player earns.</li>
-                <li>Turrets shoot the closest enemy in turret's field of view.</li>
-                <li>Designed to assist the player to survive especially in later rounds.</li>
+                <li>Player Input (WASD movement and dashing)</li>
+				<li>Player health, checkpoint system, and collectibles.
+                <li>AI behavior for patrolling and chasing jelly fishes.</li>
+				<li>Player, enemy and collectible animations.</li>
             </ul>
           </div>
         </div>
