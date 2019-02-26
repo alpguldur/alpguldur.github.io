@@ -12,7 +12,7 @@
 #name {
 	width: 900px;
 	height: 110px;
-	background: url(images/Banners/nameBackground.jpg) no-repeat left top;
+	background: url(images/Banners/nameBackground2.jpg) no-repeat left top;
 	margin-top: 0;
 	margin-right: auto;
 	margin-bottom: 0;
@@ -220,4 +220,14 @@ a img {
 
 .resumeText p {
     line-height: 10px;
+}
+
+/* Image Zoom */
+
+.zoom {
+	transition: transform .2s;
+}
+
+.zoom:hover {
+	transform: scale(1.058);
 }
