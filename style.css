@@ -10,7 +10,8 @@
 /* Name */
 
 #name {
-	width: 900px;
+	margin: auto;
+	width: 75%;
 	height: 110px;
 	background: url(images/Banners/nameBackground2.jpg) no-repeat left top;
 	margin-top: 0;
@@ -22,7 +23,7 @@
 /* Wrapper */
 
 #wrapper {
-	width: 900px;
+	width: 1200px;
 	background-color: #252830;
 	background-repeat: inherit;
 	background-position: left top;
@@ -61,7 +62,8 @@ a img {
 /* Header */
 
 #header {
-	width: 850px;
+	margin: auto;
+	width: 72%;
 	height: 50px;
 	margin: 0 auto;
 	background: url(images/Banners/navBarBackground.png) repeat-x left top; /*Background image behind navigation bar*/
@@ -107,10 +109,12 @@ a img {
 /* Page Outline */
 
 #page_outline {
-	float: left;
-	width: 860px;
+	/*float: left;*/
+	width: 75%;
+	margin: auto;
 	padding-top: 25px;
 	padding-left: 15px;
+	
 }
 
 /* Content */
